@@ -1,0 +1,9 @@
+C:\Users\User\source\repos\Events\Events\bin\Debug\Events.exe.config
+C:\Users\User\source\repos\Events\Events\bin\Debug\Events.exe
+C:\Users\User\source\repos\Events\Events\bin\Debug\Events.pdb
+C:\Users\User\source\repos\Events\Events\obj\Debug\Events.csprojAssemblyReference.cache
+C:\Users\User\source\repos\Events\Events\obj\Debug\Events.Dogadjaj.resources
+C:\Users\User\source\repos\Events\Events\obj\Debug\Events.Properties.Resources.resources
+C:\Users\User\source\repos\Events\Events\obj\Debug\Events.csproj.GenerateResource.cache
+C:\Users\User\source\repos\Events\Events\obj\Debug\Events.exe
+C:\Users\User\source\repos\Events\Events\obj\Debug\Events.pdb
