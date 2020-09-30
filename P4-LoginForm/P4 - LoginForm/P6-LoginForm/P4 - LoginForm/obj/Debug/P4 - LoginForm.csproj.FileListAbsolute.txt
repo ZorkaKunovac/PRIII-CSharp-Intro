@@ -1,0 +1,9 @@
+C:\Users\User\source\repos\P4 - LoginForm\P4 - LoginForm\bin\Debug\P4 - LoginForm.exe.config
+C:\Users\User\source\repos\P4 - LoginForm\P4 - LoginForm\bin\Debug\P4 - LoginForm.exe
+C:\Users\User\source\repos\P4 - LoginForm\P4 - LoginForm\bin\Debug\P4 - LoginForm.pdb
+C:\Users\User\source\repos\P4 - LoginForm\P4 - LoginForm\obj\Debug\P4 - LoginForm.csprojAssemblyReference.cache
+C:\Users\User\source\repos\P4 - LoginForm\P4 - LoginForm\obj\Debug\P4___LoginForm.Form1.resources
+C:\Users\User\source\repos\P4 - LoginForm\P4 - LoginForm\obj\Debug\P4___LoginForm.Properties.Resources.resources
+C:\Users\User\source\repos\P4 - LoginForm\P4 - LoginForm\obj\Debug\P4 - LoginForm.csproj.GenerateResource.cache
+C:\Users\User\source\repos\P4 - LoginForm\P4 - LoginForm\obj\Debug\P4 - LoginForm.exe
+C:\Users\User\source\repos\P4 - LoginForm\P4 - LoginForm\obj\Debug\P4 - LoginForm.pdb
