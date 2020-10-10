@@ -33,3 +33,26 @@ C:\Users\User\source\repos\P6-LoginForm\P4 - LoginForm\bin\Debug\System.Data.SQL
 C:\Users\User\source\repos\P6-LoginForm\P4 - LoginForm\bin\Debug\System.Data.SQLite.dll.config
 C:\Users\User\source\repos\P6-LoginForm\P4 - LoginForm\obj\Debug\P4___LoginForm.DbStudenti.resources
 C:\Users\User\source\repos\P6-LoginForm\P4 - LoginForm\obj\Debug\P4-LoginForm.csproj.CopyComplete
+C:\Users\User\Documents\GitHub\PRIII-CSharp-Intro\P6-LoginForm\P4 - LoginForm\bin\Debug\P4 - LoginForm.exe.config
+C:\Users\User\Documents\GitHub\PRIII-CSharp-Intro\P6-LoginForm\P4 - LoginForm\bin\Debug\P4 - LoginForm.exe
+C:\Users\User\Documents\GitHub\PRIII-CSharp-Intro\P6-LoginForm\P4 - LoginForm\bin\Debug\P4 - LoginForm.pdb
+C:\Users\User\Documents\GitHub\PRIII-CSharp-Intro\P6-LoginForm\P4 - LoginForm\bin\Debug\EntityFramework.dll
+C:\Users\User\Documents\GitHub\PRIII-CSharp-Intro\P6-LoginForm\P4 - LoginForm\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Documents\GitHub\PRIII-CSharp-Intro\P6-LoginForm\P4 - LoginForm\bin\Debug\System.Data.SQLite.dll
+C:\Users\User\Documents\GitHub\PRIII-CSharp-Intro\P6-LoginForm\P4 - LoginForm\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\User\Documents\GitHub\PRIII-CSharp-Intro\P6-LoginForm\P4 - LoginForm\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\User\Documents\GitHub\PRIII-CSharp-Intro\P6-LoginForm\P4 - LoginForm\bin\Debug\EntityFramework.xml
+C:\Users\User\Documents\GitHub\PRIII-CSharp-Intro\P6-LoginForm\P4 - LoginForm\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Documents\GitHub\PRIII-CSharp-Intro\P6-LoginForm\P4 - LoginForm\bin\Debug\System.Data.SQLite.xml
+C:\Users\User\Documents\GitHub\PRIII-CSharp-Intro\P6-LoginForm\P4 - LoginForm\bin\Debug\System.Data.SQLite.dll.config
+C:\Users\User\Documents\GitHub\PRIII-CSharp-Intro\P6-LoginForm\P4 - LoginForm\obj\Debug\P4-LoginForm.csprojAssemblyReference.cache
+C:\Users\User\Documents\GitHub\PRIII-CSharp-Intro\P6-LoginForm\P4 - LoginForm\obj\Debug\P4___LoginForm.DbStudenti.resources
+C:\Users\User\Documents\GitHub\PRIII-CSharp-Intro\P6-LoginForm\P4 - LoginForm\obj\Debug\P4___LoginForm.Form1.resources
+C:\Users\User\Documents\GitHub\PRIII-CSharp-Intro\P6-LoginForm\P4 - LoginForm\obj\Debug\P4___LoginForm.KorisniciAdmin.resources
+C:\Users\User\Documents\GitHub\PRIII-CSharp-Intro\P6-LoginForm\P4 - LoginForm\obj\Debug\P4___LoginForm.KorisniciPolozeniPredmeti.resources
+C:\Users\User\Documents\GitHub\PRIII-CSharp-Intro\P6-LoginForm\P4 - LoginForm\obj\Debug\P4___LoginForm.Properties.Resources.resources
+C:\Users\User\Documents\GitHub\PRIII-CSharp-Intro\P6-LoginForm\P4 - LoginForm\obj\Debug\P4___LoginForm.Registracija.resources
+C:\Users\User\Documents\GitHub\PRIII-CSharp-Intro\P6-LoginForm\P4 - LoginForm\obj\Debug\P4-LoginForm.csproj.GenerateResource.cache
+C:\Users\User\Documents\GitHub\PRIII-CSharp-Intro\P6-LoginForm\P4 - LoginForm\obj\Debug\P4-LoginForm.csproj.CopyComplete
+C:\Users\User\Documents\GitHub\PRIII-CSharp-Intro\P6-LoginForm\P4 - LoginForm\obj\Debug\P4 - LoginForm.exe
+C:\Users\User\Documents\GitHub\PRIII-CSharp-Intro\P6-LoginForm\P4 - LoginForm\obj\Debug\P4 - LoginForm.pdb
