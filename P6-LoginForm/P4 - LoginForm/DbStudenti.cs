@@ -37,22 +37,6 @@ namespace P4___LoginForm
                 MessageBox.Show(ex.Message + " " + ex.InnerException?.Message);
             }
         }
-
-        private void btnDodajStudent2_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                Studenti novi = new Studenti() { ImePrezime = txtImePrezime.Text };
-                konekcijaNaBazu.Studenti.Add(novi);
-                konekcijaNaBazu.SaveChanges();
-                UcitajSveStudente();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message + " " + ex.InnerException?.Message);
-            }
-        }
-
         private void UcitajSveStudente()
         {
             try
