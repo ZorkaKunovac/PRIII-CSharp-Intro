@@ -15,6 +15,7 @@ namespace P4___LoginForm
 
         }
         public DbSet<Studenti> Studenti { get; set; }
+        public DbSet <Korisnik> Korisnici { get; set; }
     }
     [Table("Studenti")]
      class Studenti

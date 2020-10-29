@@ -16,7 +16,7 @@ namespace P4___LoginForm
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DbStudenti());
+            Application.Run(new KorisniciAdmin());
         }
     }
 }

@@ -12,18 +12,23 @@ namespace P4___LoginForm
 {
     public partial class KorisniciAdmin : Form
     {
+        KonekcijaNaBazu konekcijaNaBazu = new KonekcijaNaBazu();
         public KorisniciAdmin()
         {
             InitializeComponent();
             dvgKorisnici.AutoGenerateColumns = false;
         }
-        private void LoadData(List<Korisnik> rezultat = null)
+        private void LoadData(List<Korisnik> korisnici = null)
         {
-            dvgKorisnici.DataSource = null;
-            if (rezultat == null)
-                dvgKorisnici.DataSource = DBInMemory.RegistrovaniKorisnici;
-            else
-                dvgKorisnici.DataSource = rezultat;
+            try
+            {
+                dvgKorisnici.DataSource = null;
+                dvgKorisnici.DataSource = korisnici ?? konekcijaNaBazu.Korisnici.ToList();
+             }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + " " + ex.InnerException?.Message);
+            }
         }
         private void KorisniciAdmin_Load(object sender, EventArgs e)
         {

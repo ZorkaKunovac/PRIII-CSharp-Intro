@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Entity;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -14,6 +15,7 @@ namespace P4___LoginForm
     {
         private Korisnik korisnik;
         public bool Edit { get; set; }
+        KonekcijaNaBazu KonekcijaNaBazu = new KonekcijaNaBazu();
         public Registracija()
         {
             InitializeComponent();
@@ -34,7 +36,7 @@ namespace P4___LoginForm
                 txtPrezime.Text = korisnik.Prezime;
                 txtUsername.Text = korisnik.Username;
                 txtPassword.Text = korisnik.Password;
-                pbSlikaKorisnika.Image = korisnik.Slika;
+                pbSlikaKorisnika.Image = ImageHelper.FromByteToImage(korisnik.Slika);
                 cmbSpol.SelectedItem = korisnik.Spol;
                 cbAdmin.Checked = korisnik.Admin;
             }
@@ -51,18 +53,24 @@ namespace P4___LoginForm
                 korisnik.Prezime = txtPrezime.Text;
                 korisnik.Username = txtUsername.Text;
                 korisnik.Password = txtPassword.Text;
-                korisnik.Slika = pbSlikaKorisnika.Image;
+                korisnik.Slika = ImageHelper.FromImageToByte(pbSlikaKorisnika.Image);
                 //korisnik.Spol = cmbSpol.Text;
                 korisnik.Spol = cmbSpol.SelectedItem.ToString();
                 korisnik.Admin = cbAdmin.Checked;
                 if (!Edit)
                 {
-                    korisnik.Id = DBInMemory.RegistrovaniKorisnici.Count + 1;
-                    DBInMemory.RegistrovaniKorisnici.Add(korisnik);
+                    //korisnik.Id = DBInMemory.RegistrovaniKorisnici.Count + 1;
+                    //DBInMemory.RegistrovaniKorisnici.Add(korisnik);
+                    KonekcijaNaBazu.Korisnici.Add(korisnik);
+                    KonekcijaNaBazu.SaveChanges();
                     MessageBox.Show("Korisnik uspjesno sacuvan!");
                 }
-                else MessageBox.Show("Korisnik uspjesno editovan!");
-
+                else
+                {
+                    KonekcijaNaBazu.Entry(korisnik).State = EntityState.Modified;
+                    KonekcijaNaBazu.SaveChanges();
+                    MessageBox.Show("Korisnik uspjesno editovan!");
+                }
                 DialogResult = DialogResult.OK;
                 Close();
             }

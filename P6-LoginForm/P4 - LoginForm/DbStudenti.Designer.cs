@@ -41,19 +41,19 @@
             this.dgvStudenti.Name = "dgvStudenti";
             this.dgvStudenti.RowHeadersWidth = 51;
             this.dgvStudenti.RowTemplate.Height = 24;
-            this.dgvStudenti.Size = new System.Drawing.Size(357, 150);
+            this.dgvStudenti.Size = new System.Drawing.Size(395, 170);
             this.dgvStudenti.TabIndex = 0;
             // 
             // txtImePrezime
             // 
             this.txtImePrezime.Location = new System.Drawing.Point(12, 12);
             this.txtImePrezime.Name = "txtImePrezime";
-            this.txtImePrezime.Size = new System.Drawing.Size(262, 22);
+            this.txtImePrezime.Size = new System.Drawing.Size(288, 22);
             this.txtImePrezime.TabIndex = 1;
             // 
             // btnDodajStudenta
             // 
-            this.btnDodajStudenta.Location = new System.Drawing.Point(280, 7);
+            this.btnDodajStudenta.Location = new System.Drawing.Point(318, 10);
             this.btnDodajStudenta.Name = "btnDodajStudenta";
             this.btnDodajStudenta.Size = new System.Drawing.Size(89, 27);
             this.btnDodajStudenta.TabIndex = 2;
@@ -65,7 +65,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(390, 216);
+            this.ClientSize = new System.Drawing.Size(446, 263);
             this.Controls.Add(this.btnDodajStudenta);
             this.Controls.Add(this.txtImePrezime);
             this.Controls.Add(this.dgvStudenti);
