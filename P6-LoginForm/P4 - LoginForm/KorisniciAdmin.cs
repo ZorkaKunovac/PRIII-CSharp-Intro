@@ -12,7 +12,7 @@ namespace P4___LoginForm
 {
     public partial class KorisniciAdmin : Form
     {
-        KonekcijaNaBazu konekcijaNaBazu = new KonekcijaNaBazu();
+        KonekcijaNaBazu konekcijaNaBazu = DLWMS.DB;
         public KorisniciAdmin()
         {
             InitializeComponent();

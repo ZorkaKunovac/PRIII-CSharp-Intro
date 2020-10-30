@@ -15,7 +15,7 @@ namespace P4___LoginForm
     {
         private Korisnik korisnik;
         public bool Edit { get; set; }
-        KonekcijaNaBazu KonekcijaNaBazu = new KonekcijaNaBazu();
+        KonekcijaNaBazu konekcijaNaBazu = DLWMS.DB;
         public Registracija()
         {
             InitializeComponent();
@@ -37,7 +37,7 @@ namespace P4___LoginForm
                 txtUsername.Text = korisnik.Username;
                 txtPassword.Text = korisnik.Password;
                 pbSlikaKorisnika.Image = ImageHelper.FromByteToImage(korisnik.Slika);
-                cmbSpol.SelectedItem = korisnik.Spol;
+                cmbSpol.SelectedValue = korisnik.Spol.ID;
                 cbAdmin.Checked = korisnik.Admin;
             }
             catch (Exception ex)
@@ -55,20 +55,20 @@ namespace P4___LoginForm
                 korisnik.Password = txtPassword.Text;
                 korisnik.Slika = ImageHelper.FromImageToByte(pbSlikaKorisnika.Image);
                 //korisnik.Spol = cmbSpol.Text;
-                korisnik.Spol = cmbSpol.SelectedItem.ToString();
+                korisnik.Spol = cmbSpol.SelectedItem as Spolovi;
                 korisnik.Admin = cbAdmin.Checked;
                 if (!Edit)
                 {
                     //korisnik.Id = DBInMemory.RegistrovaniKorisnici.Count + 1;
                     //DBInMemory.RegistrovaniKorisnici.Add(korisnik);
-                    KonekcijaNaBazu.Korisnici.Add(korisnik);
-                    KonekcijaNaBazu.SaveChanges();
+                    konekcijaNaBazu.Korisnici.Add(korisnik);
+                    konekcijaNaBazu.SaveChanges();
                     MessageBox.Show("Korisnik uspjesno sacuvan!");
                 }
                 else
                 {
-                    KonekcijaNaBazu.Entry(korisnik).State = EntityState.Modified;
-                    KonekcijaNaBazu.SaveChanges();
+                    konekcijaNaBazu.Entry(korisnik).State = System.Data.Entity.EntityState.Modified;
+                    konekcijaNaBazu.SaveChanges();
                     MessageBox.Show("Korisnik uspjesno editovan!");
                 }
                 DialogResult = DialogResult.OK;
@@ -125,7 +125,16 @@ namespace P4___LoginForm
       
         private void UcitajSpolove()
         {
-            cmbSpol.DataSource = DBInMemory.Spolovi;
+            try
+            {
+                cmbSpol.DataSource = konekcijaNaBazu.Spolovi.ToList();  //DBInMemory.Spolovi;
+                cmbSpol.DisplayMember = "Spol";
+                cmbSpol.ValueMember = "ID";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message+" " + ex.InnerException?.Message);
+            }
         }
 
         private void cmbSpol_SelectedIndexChanged(object sender, EventArgs e)

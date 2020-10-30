@@ -17,7 +17,9 @@ namespace P4___LoginForm
         public string Username { get; set; }
         public string Password { get; set; }
         public byte[] Slika { get; set; }
-        public string Spol { get; set; }
+        public virtual Spolovi Spol { get; set; }
+
+        // public string Spol { get; set; }
         public bool Admin { get; set; }
         public List<PolozeniPredmeti> Polozeni { get; set; } = new List<PolozeniPredmeti>();
 
